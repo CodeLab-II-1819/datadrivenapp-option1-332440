@@ -102,26 +102,78 @@ int main() {
 
 			//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 					//COUNTING THE TOTAL NUMBER OF TWEETS THAT INCLUDE THE WORD POLITICS
-			string tweet2;
+			string tweet1;
 
-			ifstream File2;
-			File2.open("sampleTweets.csv");
+			ifstream File1;
+			File1.open("sampleTweets.csv");
 			int p = 0;
 
 			if (menu == 3) {
-				if (File2.good()) {
-					while (!File2.eof()) {
+				if (File1.good()) {
+					while (!File1.eof()) {
 
-						getline(File2, tweet2);
+						getline(File1, tweet1);
 
-						if (tweet2.find("Politics") <= tweet2.length() || tweet2.find("politics") <= tweet2.length() || tweet2.find("politic") <= tweet2.length() || tweet2.find("Politic") <= tweet2.length()) {
+						if (tweet1.find("Politics") <= tweet1.length() || tweet1.find("politics") <= tweet1.length() || tweet1.find("politic") <= tweet1.length() || tweet1.find("Politic") <= tweet1.length()) {
 
 							p++;
 
 						}
 					}
 
-					cout << "             The curent number of tweets that contain the word politics = " << p << endl;
+					cout << "             The curent number of tweets that contain the word Politics = " << p << endl;
+					cout << "_________________________________________________________________________________________" << endl;
+					inFile.close();
+				}
+			}
+				//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+					//COUNTING THE TOTAL NUMBER OF TWEETS THAT INCLUDE THE WORD TRUMP
+			string tweet2;
+
+			ifstream File2;
+			File2.open("sampleTweets.csv");
+			int t = 0;
+
+			if (menu == 4) {
+				if (File2.good()) {
+					while (!File2.eof()) {
+
+						getline(File2, tweet2);
+
+						if (tweet2.find("Trump") <= tweet2.length() || tweet2.find("trump") <= tweet2.length() || tweet2.find("politic") <= tweet2.length() || tweet2.find("Politic") <= tweet2.length()) {
+
+							t++;
+
+						}
+					}
+
+					cout << "             The curent number of tweets that contain the word Trump = " << t << endl;
+					cout << "_________________________________________________________________________________________" << endl;
+					inFile.close();
+				}
+			}
+				//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+					//COUNTING THE TOTAL NUMBER OF TWEETS THAT INCLUDE THE WORD PARIS
+			string tweet3;
+
+			ifstream File3;
+			File3.open("sampleTweets.csv");
+			int pa = 0;
+
+			if (menu == 5) {
+				if (File3.good()) {
+					while (!File3.eof()) {
+
+						getline(File3, tweet3);
+
+						if (tweet3.find("Paris") <= tweet3.length() || tweet3.find("paris") <= tweet3.length()) {
+
+							pa++;
+
+						}
+					}
+
+					cout << "             The curent number of tweets that contain the word Paris = " << pa << endl;
 					cout << "_________________________________________________________________________________________" << endl;
 					inFile.close();
 				}
@@ -129,21 +181,21 @@ int main() {
 
 			//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 					//PRINTING TWEETS THAT SHOW THE WORD PARIS
-			string tweet3;
+			string tweet4;
 
-			ifstream inFile3;
-			inFile3.open("sampleTweets.csv");
+			ifstream inFile4;
+			inFile4.open("sampleTweets.csv");
 
 			if (menu == 6) {
-				if (inFile3.good()) {
-					while (!inFile3.eof()) {
+				if (inFile4.good()) {
+					while (!inFile4.eof()) {
 
-						getline(inFile3, tweet3);
+						getline(inFile4, tweet4);
 
-						if (tweet3.find("Paris") <= tweet3.length() || tweet3.find("paris") <= tweet3.length()) {
+						if (tweet4.find("Paris") <= tweet4.length() || tweet4.find("paris") <= tweet4.length()) {
 
 							cout << "         Tweets including Paris: " << endl;
-							cout << tweet3 << endl << "_____________________________________________________________________________________________________________" << endl;
+							cout << tweet4 << endl << "_____________________________________________________________________________________________________________" << endl;
 
 						}
 
@@ -155,21 +207,21 @@ int main() {
 
 			//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 					//PRINTING TWEETS THAT SHOW THE WORD DREAMWORK
-			string tweet4;
+			string tweet5;
 
-			ifstream inFile4;
-			inFile4.open("sampleTweets.csv");
+			ifstream inFile5;
+			inFile5.open("sampleTweets.csv");
 
 			if (menu == 7) {
-				if (inFile4.good()) {
-					while (!inFile4.eof()) {
+				if (inFile5.good()) {
+					while (!inFile5.eof()) {
 
-						getline(inFile4, tweet4);
+						getline(inFile5, tweet5);
 
-						if (tweet4.find("Dreamworks") <= tweet4.length() || tweet4.find("dreamworks") <= tweet4.length() || tweet4.find("Dreamwork") <= tweet4.length() || tweet4.find("dreamwork") <= tweet4.length()) {
+						if (tweet5.find("Dreamworks") <= tweet5.length() || tweet5.find("dreamworks") <= tweet5.length() || tweet5.find("Dreamwork") <= tweet5.length() || tweet5.find("dreamwork") <= tweet5.length()) {
 
 							cout << "         Tweets including Dreamworks: " << endl;
-							cout << tweet4 << endl << "_____________________________________________________________________________________________________________" << endl;
+							cout << tweet5 << endl << "_____________________________________________________________________________________________________________" << endl;
 
 						}
 
@@ -182,21 +234,21 @@ int main() {
 
 			//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 					//PRINTING TWEETS THAT SHOW THE WORD UBER
-			string tweet5;
+			string tweet6;
 
-			ifstream inFile5;
-			inFile5.open("sampleTweets.csv");
+			ifstream inFile6;
+			inFile6.open("sampleTweets.csv");
 
 			if (menu == 8) {
-				if (inFile5.good()) {
-					while (!inFile5.eof()) {
+				if (inFile6.good()) {
+					while (!inFile6.eof()) {
 
-						getline(inFile5, tweet5);
+						getline(inFile6, tweet6);
 
-						if (tweet5.find("Uber") <= tweet5.length() || tweet5.find("uber") <= tweet5.length()) {
+						if (tweet6.find("Uber") <= tweet6.length() || tweet6.find("uber") <= tweet6.length()) {
 
 							cout << "         Tweets including Uber: " << endl;
-							cout << tweet5 << endl << "_____________________________________________________________________________________________________________" << endl;
+							cout << tweet6 << endl << "_____________________________________________________________________________________________________________" << endl;
 
 						}
 
@@ -210,8 +262,70 @@ int main() {
 				cout << "_________________________________________________________________________________________" << endl;
 			}
 		} 
-			
+				//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+					//PRINTING TWEETS THAT SHOW THE WORD TRUMP
+			string tweet7;
+
+			ifstream inFile7;
+			inFile7.open("sampleTweets.csv");
+
+			if (menu == 9) {
+				if (inFile7.good()) {
+					while (!inFile7.eof()) {
+
+						getline(inFile7, tweet7);
+
+						if (tweet7.find("Trump") <= tweet7.length() || tweet7.find("trump") <= tweet7.length()) {
+
+							cout << "         Tweets including Trump: " << endl;
+							cout << tweet7 << endl << "_____________________________________________________________________________________________________________" << endl;
+
+						}
+
+					}
+					cout << "_________________________________________________________________________________________" << endl << endl << endl;
+					inFile.close();
+				}
+			}
+			if (menu < 1 || menu >10) {
+				cout << "Input not valid. Enter correct input" << endl;
+				cout << "_________________________________________________________________________________________" << endl;
+			}
+		}	
+		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+					//PRINTING TWEETS THAT SHOW THE WORD TRUMP
+			string tweet8;
+
+			ifstream inFile8;
+			inFile8.open("sampleTweets.csv");
+
+			if (menu == 10) {
+				if (inFile8.good()) {
+					while (!inFile8.eof()) {
+
+						getline(inFile8, tweet8);
+
+						if (tweet8.find("Trump") <= tweet8.length() || tweet8.find("trump") <= tweet8.length()) {
+
+							cout << "         Tweets including Trump: " << endl;
+							cout << tweet8 << endl << "_____________________________________________________________________________________________________________" << endl;
+
+						}
+
+					}
+					cout << "_________________________________________________________________________________________" << endl << endl << endl;
+					inFile.close();
+				}
+			}
+			if (menu < 1 || menu >10) {
+				cout << "Input not valid. Enter correct input" << endl;
+				cout << "_________________________________________________________________________________________" << endl;
+			}
+		}
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		
 	system("pause");
 }
+}
+	
+		
