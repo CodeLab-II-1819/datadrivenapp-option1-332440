@@ -284,16 +284,17 @@ int main() {
 
 					}
 					cout << "_________________________________________________________________________________________" << endl << endl << endl;
-					inFile.close();
+
+					inFile7.close();
 				}
 			}
 			if (menu < 1 || menu >10) {
 				cout << "Input not valid. Enter correct input" << endl;
 				cout << "_________________________________________________________________________________________" << endl;
 			}
-		}	
+			
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-					//PRINTING TWEETS THAT SHOW THE WORD TRUMP
+					//PRINTING TWEETS THAT SHOW THE WORD POLITICS
 			string tweet8;
 
 			ifstream inFile8;
@@ -305,27 +306,28 @@ int main() {
 
 						getline(inFile8, tweet8);
 
-						if (tweet8.find("Trump") <= tweet8.length() || tweet8.find("trump") <= tweet8.length()) {
+						if (tweet8.find("Politics") <= tweet8.length() || tweet8.find("politics") <= tweet8.length()) {
 
-							cout << "         Tweets including Trump: " << endl;
+							cout << "         Tweets including Politics: " << endl;
 							cout << tweet8 << endl << "_____________________________________________________________________________________________________________" << endl;
 
 						}
 
 					}
 					cout << "_________________________________________________________________________________________" << endl << endl << endl;
-					inFile.close();
+					inFile8.close();
 				}
 			}
 			if (menu < 1 || menu >10) {
 				cout << "Input not valid. Enter correct input" << endl;
 				cout << "_________________________________________________________________________________________" << endl;
 			}
-		}
+		
 		//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		
 	system("pause");
 }
-}
+
+
 	
 		
