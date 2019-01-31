@@ -13,7 +13,12 @@ void ofApp::update(){
 //--------------------------------------------------------------
 void ofApp::draw(){
 
-	ofDrawRectangle(10,10,10,10);
+	ofDrawRectangle(0,0,1270,150);
+
+	ofFill();
+	ofSetColor(91, 175, 191);  
+	ofDrawRectangle(1000, 0, 1270, 150);
+	ofNoFill();
 
 }
 
